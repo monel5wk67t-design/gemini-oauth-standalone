@@ -1,0 +1,40 @@
+{
+  "name": "gemini-oauth-standalone",
+  "version": "1.0.0",
+  "description": "Minimal Google Gemini OAuth 2.0 implementation with PKCE",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@openauthjs/openauth": "^0.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "oauth",
+    "google",
+    "gemini",
+    "pkce",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT"
+}
